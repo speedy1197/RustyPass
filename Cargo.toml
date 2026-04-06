@@ -1,5 +1,5 @@
 [package]
-name = "password_manager"
+name = "RusstyPass"
 version = "0.1.0"
 edition = "2024"
 
@@ -11,3 +11,5 @@ serde_json = "1.0.149"
 sha2 = "0.10.8"
 ratatui = "0.26.3"
 crossterm = "0.27.0"
+dirs = "5.0.1"
+rand = "0.8.5"

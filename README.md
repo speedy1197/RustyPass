@@ -1,7 +1,5 @@
 # RustyPass - Secure Password Manager
 
-![RustyPass Logo](https://raw.githubusercontent.com/yourusername/RustyPass/main/assets/logo.png)
-
 **RustyPass** is a secure, terminal-based password manager written in Rust. It provides AES-256-GCM encryption, secure password generation, and support for importing from popular password managers.
 
 ## Features

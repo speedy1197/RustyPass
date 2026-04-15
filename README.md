@@ -194,11 +194,7 @@ cargo run
 
 ## License
 
-RustyPass is licensed under the [MIT License](LICENSE).
-
-## Security Contact
-
-If you discover any security vulnerabilities, please email `security@rustypass.com` instead of using the issue tracker.
+RustyPass is licensed under the [GPL v.3](LICENSE).
 
 ## Alternatives
 
@@ -213,28 +209,15 @@ If RustyPass doesn't meet your needs, consider these alternatives:
 
 For help and discussions:
 
-- **GitHub Issues**: Bug reports and feature requests
-- **Discord**: Real-time community support
-- **Email**: support@rustypass.com
-
-## Screenshots
-
-![Main Menu](https://raw.githubusercontent.com/yourusername/RustyPass/main/screenshots/main-menu.png)
-![Password Generation](https://raw.githubusercontent.com/yourusername/RustyPass/main/screenshots/generate-password.png)
-![Import](https://raw.githubusercontent.com/yourusername/RustyPass/main/screenshots/import.png)
+- **Email**: eliii105@proton.me
 
 ## Credits
 
-RustyPass was created by [Your Name] and is maintained by the open-source community. Special thanks to all contributors and the Rust ecosystem for providing excellent libraries.
+RustyPass was created by speedy and is maintained by the open-source community. Special thanks to all contributors and the Rust ecosystem for providing excellent libraries.
 
 ## Donations
 
-RustyPass is free and open-source software. If you find it useful, consider supporting development:
-
-- **GitHub Sponsors**: [Sponsor on GitHub](https://github.com/sponsors/yourusername)
-- **Patreon**: [Support on Patreon](https://patreon.com/yourusername)
-- **Cryptocurrency**: `1YourBitcoinAddressHere`
-
+RustyPass is free and open-source software.
 ---
 
 **Stay secure!** 🔒 The RustyPass Team

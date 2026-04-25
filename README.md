@@ -151,7 +151,7 @@ cargo run   # Start development version
 
 ## 📄 License
 
-This project is licensed under **GPLv3** - see RustyPass/GNU General Public License v3.0 for details.
+This project is licensed under **GPLv3** - see (https://github.com/speedy1197/RustyPass/blob/main/GNU%20General%20Public%20License%20v3.0) for details.
 
 ---
 

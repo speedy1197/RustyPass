@@ -151,7 +151,7 @@ cargo run   # Start development version
 
 ## 📄 License
 
-This project is licensed under **GPLv3** - see [LICENSE](LICENSE) for details.
+This project is licensed under **GPLv3** - see GNU General Public License v3.0 for details.
 
 ---
 

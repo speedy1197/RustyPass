@@ -45,7 +45,7 @@ A terminal-based password manager built with Rust, offering military-grade encry
 
 | Component       | Technology                          |
 |-----------------|-------------------------------------|
-| Language        | Rust (2024 edition)                 |
+| Language        | Rust                 |
 | Encryption      | XChaCha20-Poly1305 (`chacha20poly1305` crate) |
 | Key Derivation  | Argon2id (`argon2` crate)           |
 | UI Framework    | Ratatui                             |

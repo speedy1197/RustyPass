@@ -1,122 +1,186 @@
 # RustyPass - Secure Password Manager
 
-**License**: GPL v3
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Rust](https://img.shields.io/badge/Built_with-Rust-orange)](https://www.rust-lang.org/)
 
-RustyPass is a secure, terminal-based password manager built with Rust, offering robust encryption and intuitive password management.
+A terminal-based password manager built with Rust, offering military-grade encryption and intuitive password management with real-time security analysis.
 
-## Security Features
+---
 
-- **Military-grade encryption**: XChaCha20-Poly1305 for all stored credentials
-- **Secure key derivation**: Argon2id for master password protection
-- **Password quality analysis**: Real-time strength and entropy meters
-- **Pattern detection**: Identifies and warns about weak password patterns
-- **Secure memory handling**: Proper cleanup of sensitive data
+## 🔒 Security Features
 
-## Current Feature Set
+- **XChaCha20-Poly1305 encryption**: Authenticated encryption for all stored credentials
+- **Argon2id key derivation**: Memory-hard password hashing resistant to brute force
+- **Secure memory handling**: Zeroization of sensitive data after use
+- **Password quality analysis**:
+  - Real-time strength/entropy meters
+  - Pattern detection for weak passwords
+  - Visual feedback during password creation
+
+---
+
+## 🚀 Features
 
 ### Password Management
-- **Service-based organization**: Logical grouping of credentials by service
-- **Add/Edit/Delete**: Full CRUD operations for password entries
-- **Password generation**: Secure random password creation
-- **Import/Export**: JSON and CSV format support
+✅ Service-based organization
+✅ Full CRUD operations
+✅ Secure password generation
+✅ JSON/CSV import/export
 
 ### User Interface
-- **Terminal-based**: Clean TUI using Ratatui
-- **Intuitive navigation**: Keyboard-driven with context-sensitive help
-- **Visual feedback**: Color-coded strength and entropy meters
-- **Dedicated services menu**: Focused interface for credential management
+🖥️ Terminal-based TUI (Ratatui)
+🎯 Keyboard-driven navigation
+📊 Color-coded security indicators
+🔄 Responsive real-time feedback
 
 ### Security Analysis
-- **Strength meter**: Visual representation of password quality
-- **Entropy calculation**: Mathematical measurement of unpredictability
-- **Real-time feedback**: Updates as you type
-- **Pattern detection**: Warns about sequential/repeated characters
+📈 Password strength visualization
+🔢 Entropy calculation
+⚠️ Weak pattern detection
+🔍 Comprehensive security metrics
 
-### Settings & Configuration
-- **Security preferences**: Customizable protection settings
-- **Password policies**: Configurable generation rules
-- **Performance options**: Balance between security and speed
+---
 
-## Technical Implementation
+## 🛠️ Technical Stack
 
-- **Language**: Rust (2024 edition)
-- **Encryption**: XChaCha20-Poly1305 via `chacha20poly1305` crate
-- **Key derivation**: Argon2id for resistant password hashing
-- **Password analysis**: Custom entropy calculation with pattern detection
-- **UI Framework**: Ratatui for terminal interface
+| Component       | Technology                          |
+|-----------------|-------------------------------------|
+| Language        | Rust (2024 edition)                 |
+| Encryption      | XChaCha20-Poly1305 (`chacha20poly1305` crate) |
+| Key Derivation  | Argon2id (`argon2` crate)           |
+| UI Framework    | Ratatui                             |
+| Password Analysis | Custom entropy/pattern detection |
 
-## Usage Highlights
+---
 
-- **Main menu**: Quick access to all features via keyboard shortcuts
-- **Services menu**: Dedicated interface for credential management
-- **Password input**: Real-time quality feedback during entry
-- **Navigation**: Intuitive keyboard controls with visual feedback
+## 📥 Installation
 
-## Recent Enhancements
+### Prerequisites
+- Rust toolchain (latest stable)
+- Cargo package manager
 
-### Services Menu Overhaul
-- **Removed side panel**: Eliminated distracting side panel
-- **Dedicated Services Menu**: Proper menu option for managing services
-- **Improved navigation**: Services accessible via main menu with `s` shortcut
-- **Enhanced workflow**: View, delete, and manage services through focused interface
-
-### Password Strength & Entropy Analysis
-- **Real-time strength meter**: Visual gauge showing password strength level
-- **Entropy calculation**: Mathematical measurement of password unpredictability
-- **Pattern detection**: Identifies common weak patterns
-- **Compact display**: Meters fit neatly under password input
-
-## Installation
-
+### Build & Run
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/RustyPass.git
 cd RustyPass
-
-# Build the application
 cargo build --release
-
-# Run the application
-./target/release/russty_pass
+./target/release/rustypass  # Note: corrected binary name
 ```
 
-## Keybindings
+### Install (Optional)
+```bash
+cargo install --path .
+```
+
+---
+
+## ⌨️ Keybindings
 
 ### Main Menu
-- `a`: Add new password
-- `i`: Import passwords
-- `s`: Services menu
-- `t`: Settings
-- `q`/`Esc`: Exit
+| Key  | Action               |
+|------|----------------------|
+| `a`  | Add new password     |
+| `i`  | Import passwords     |
+| `s`  | Services menu        |
+| `t`  | Settings             |
+| `q`  | Exit                 |
+| `Esc`| Exit                 |
 
 ### Services Menu
-- `↑`/`↓`: Navigate services
-- `Enter`/`v`: View password
-- `d`: Delete service
-- `q`/`Esc`: Back to main menu
+| Key      | Action               |
+|----------|----------------------|
+| `↑`/`↓`  | Navigate services    |
+| `Enter`  | View password        |
+| `v`      | View password        |
+| `d`      | Delete service       |
+| `q`      | Back to main menu    |
+| `Esc`    | Back to main menu    |
 
 ### Password Input
-- Type password for real-time strength/entropy analysis
-- `g`: Generate secure password
-- `Enter`: Save password
-- `Esc`: Cancel
+| Key  | Action                       |
+|------|------------------------------|
+| `g`  | Generate secure password     |
+| `Enter` | Save password              |
+| `Esc`| Cancel                       |
 
-## Contributing
+---
 
-Contributions are welcome! Please follow these guidelines:
+## 📦 Recent Updates
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
+### 🆕 Services Menu Redesign (v0.4.0)
+- Removed distracting side panel
+- Added dedicated services menu option (`s` shortcut)
+- Improved navigation flow
+- Enhanced service management workflow
 
-## License
+### 🔍 Security Analysis Improvements
+- Compact strength/entropy meters
+- Real-time pattern detection
+- Visual feedback during password creation
 
-This project is licensed under the GPL v3 License - see the [LICENSE](LICENSE) file for details.
+---
 
-## Contact
+## 🤝 Contributing
 
-For questions or support, please open an issue on GitHub.
+We welcome contributions! Please follow these steps:
 
-RustyPass provides enterprise-grade security with a user-friendly interface, helping users maintain strong, unique passwords for all their services while ensuring data remains protected with state-of-the-art encryption.
+1. **Fork** the repository
+2. **Create** a feature branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. **Commit** your changes:
+   ```bash
+   git commit -am 'Add some feature'
+   ```
+4. **Push** to the branch:
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. **Open** a Pull Request
+
+### Development Setup
+```bash
+git clone https://github.com/yourusername/RustyPass.git
+cd RustyPass
+cargo test  # Run all tests
+cargo run   # Start development version
+```
+
+---
+
+## 📄 License
+
+This project is licensed under **GPLv3** - see [LICENSE](LICENSE) for details.
+
+---
+
+## 📬 Contact
+
+For questions or support:
+- Email eliii105@proton.me
+  
+---
+
+## 🛡️ Security Notice
+
+While RustyPass implements strong security measures:
+- Always use a **strong master password**
+- Keep your system **free of malware**
+- Regularly **backup your password database**
+- Consider using **full-disk encryption**
+
+---
+
+## 🎯 Roadmap
+
+Upcoming features we're working on:
+- [ ] Browser extension integration
+- [ ] Mobile companion app
+- [ ] Password breach monitoring
+- [ ] TOTP/2FA support
+- [ ] Cloud sync (E2E encrypted)
+
+---
+
+**RustyPass** - Your passwords deserve enterprise-grade security with open-source transparency.
